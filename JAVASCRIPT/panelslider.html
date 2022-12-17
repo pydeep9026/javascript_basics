@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>myfirst web</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+       $("#topbar").click(function(){
+        $("#panel").slideDown(300);  //use slideup and slidetoggle. 
+        $("#panel2").slideDown(400);  //use animate{{direction:'how much to move'},speed);  ex: animate({left:'800px'},1000);
+        $("#panel3").slideDown(500);  // use additional animations ex: animate({left:'800px',opacity:0.25,height:"toggle"},1000);
+        $("#panel4").slideDown(600);  // add dimention animations ex: animate({lext:'800px',opacity:0.25,height:"+=200px",width:"+="},1000)
+        });
+    });
+</script>
+
+<style>
+    #panel,#panel2,#panel3,#panel4,#topbar{
+        padding: 5px;
+        text-align: center;
+        background-color: yellow;
+        border: solid 1px black;
+    }
+    #panel,#panel2,#panel3,#panel4 {
+        padding: 30px;
+        display: none;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div id="topbar">view panel</div><br>
+    <div id="panel">panel content1</div><br>
+    <div id="panel2">panel content2</div><br>
+    <div id="panel3">panel content3</div><br>
+    <div id="panel4">panel content4</div>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("h1,h2,p").addClass("red");
+        $("div").addClass("big red")    //removeclass or toggleclass  same way
+    
+    });
+});
+</script>
+<style>
+    .big{
+        font-weight: bold;
+        font-size:x-large;
+    }
+
+    .red {
+        color:royalblue;
+    }
+    </style>
+
+</head>
+<body>
+    <h1>heading1</h1>
+    <h2>heading1</h2>
+
+    <p>text 1</p>
+
+    <div>heading 1</div>
+    <div>paragraph 1</div>
+
+    <div>heading 2</div>
+    <div>paragraph 2</div>
+
+    <div>heading 3</div>
+    <div>paragraph 3</div>
+
+    <button>add class</button>
+
+</div>
+
+</body>
+</html>

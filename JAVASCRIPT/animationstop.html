@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#start").click(function(){
+        $("#square").animate({left : '800px'}, 3000);
+    });
+    $("#stop").click(function(){
+        $("#square").stop();
+    });
+});
+</script>
+
+<style>
+#square{
+background : blue;
+height: 160px;
+width: 160px;
+margin-top: 5px;
+position: absolute;
+}
+</style>
+</head>
+<body>
+<button id="stop">Stop</button>
+<button id= "start">start</button>
+<div id="square"></div>
+
+</body>
+</html>

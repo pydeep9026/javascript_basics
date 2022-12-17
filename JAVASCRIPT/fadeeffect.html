@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>myfirst web</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+       $("button").click(function(){
+          $("#div1").fadeIn();
+          $("#div2").fadeIn(1000);  //use fadeout tp reverse the effect
+          $("#div3").fadeIn(3000);   //use fadeto(time,opacity) ex-fadeto(1000,0.20) to fade to lower opacity
+          $("#div4").fadeIn(5000);  //or use fadetoggle to do both
+        });
+    });
+</script>
+
+<style>
+    .box{
+        width:150px;
+        height:150px;
+        display:none;
+        background-color: red;
+        align-items: center;
+        margin:0 auto;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <button>fade</button>
+
+    <div id="div1" class="box"></div><br>
+    <div id="div2" class="box"></div><br>
+    <div id="div3" class="box"></div><br>
+    <div id="div4" class="box"></div><br>
+
+</body>
+
+</html>
